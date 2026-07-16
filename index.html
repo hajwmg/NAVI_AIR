@@ -85,21 +85,16 @@ a{
 
 .logo{
     display:flex;
-    align-items:baseline;
-    gap:10px;
-    font-size:58px;
-    font-weight:900;
-    letter-spacing:-1px;
-    line-height:1;
-    white-space:nowrap;
+    align-items:center;
+    flex:0 0 auto;
+    line-height:0;
 }
 
-.logo .mega{
-    color:var(--orange);
-}
-
-.logo .medical{
-    color:var(--navy);
+.logo img{
+    display:block;
+    height:64px;
+    width:auto;
+    max-width:100%;
 }
 
 .header-sub{
@@ -744,8 +739,11 @@ a{
     }
 
     .logo{
-        font-size:42px;
-        letter-spacing:-1px;
+        max-width:250px;
+    }
+
+    .logo img{
+        height:42px;
     }
 
     .header-sub{
@@ -858,8 +856,11 @@ a{
     }
 
     .logo{
-        font-size:42px;
-        letter-spacing:-2px;
+        max-width:260px;
+    }
+
+    .logo img{
+        height:50px;
     }
 
     .header-sub{
@@ -1090,7 +1091,7 @@ a{
 <header class="header">
     <div class="header-inner">
         <div class="logo">
-            <span class="mega">MEGA</span><span class="medical">MEDICAL</span>
+            <img src="./mega-medical-logo.png" alt="MEGA MEDICAL 공식 로고">
         </div>
         <div class="header-sub">나비에어 | 수술 후 비강 통기 부목 솔루션</div>
     </div>
